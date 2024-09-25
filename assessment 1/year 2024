@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    // Create variables to store five different fitness activities in minutes
+    int running = 80;       // running
+    int cycling = 60;       // cycling
+    int swimming = 90;      // swimmin
+    int weightlifting = 100;  // weightlifting
+    int yoga = 50;           // yoga
+
+    // Calculate total weekly activity time in minutes
+    int total_minutes = running + cycling + swimming + weightlifting + yoga;
+
+    // Print total weekly activity duration in minutes
+    printf("Total weekly activity: %d minutes\n", total_minutes);
+
+    // Calculate average weekly activity time per category
+    double average_minutes = total_minutes / 5.0;
+
+    // Print average weekly activity duration per category
+    printf("Average weekly activity duration per category: %.2f minutes\n", average_minutes);
+
+    return 0;
+}
